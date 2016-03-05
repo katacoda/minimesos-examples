@@ -1,0 +1,13 @@
+{
+  "id": "http-no-ports-exposed",
+  "mem": 16,
+  "cpus": 0.1,
+  "instances": 1,
+  "container": {
+    "type": "DOCKER",
+    "docker": {
+      "network": "BRIDGE",
+      "image": "scrapbook/docker-http-server"
+    }
+  }
+}

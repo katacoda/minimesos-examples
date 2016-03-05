@@ -1,0 +1,16 @@
+{
+  "id": "http-ports-exposed-dynamically",
+  "mem": 16,
+  "cpus": 0.1,
+  "instances": 1,
+  "container": {
+    "type": "DOCKER",
+    "docker": {
+      "network": "BRIDGE",
+      "image": "scrapbook/docker-http-server",
+      "portMappings": [
+        { "containerPort": 80, "protocol": "tcp" }
+      ]
+    }
+  }
+}
