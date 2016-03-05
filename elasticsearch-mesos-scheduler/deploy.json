@@ -1,0 +1,13 @@
+{
+  "id": "elasticsearch-mesos-scheduler",
+  "uris": [
+    "file:///root/elasticsearch-mesos-scheduler-1.0.0-withDependencies.jar"
+  ],
+  "cmd": "java -jar elasticsearch-mesos-scheduler-1.0.0-withDependencies.jar --zookeeperMesosUrl zk://172.18.0.3:2181/mesos --javaHome /usr/lib/jvm/java-8-openjdk-amd64/bin --frameworkUseDocker false --elasticsearchCpu 0.2",
+  "cpus": 0.2,
+  "mem": 140,
+  "env": {
+    "JAVA_OPTS": "-Xms64m -Xmx128m"
+  },
+  "instances": 1
+}
