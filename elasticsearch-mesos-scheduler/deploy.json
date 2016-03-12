@@ -3,11 +3,11 @@
   "uris": [
     "file:///root/elasticsearch-mesos-scheduler-1.0.0-withDependencies.jar"
   ],
-  "cmd": "java -jar elasticsearch-mesos-scheduler-1.0.0-withDependencies.jar --frameworkUseDocker false --zookeeperMesosUrl zk://172.18.0.3:2181/mesos --frameworkName elasticsearch --elasticsearchClusterName mesos-elasticsearch --elasticsearchCpu 0.5 --elasticsearchRam 1024 --elasticsearchDisk 1024 --elasticsearchNodes 1",
+  "cmd": "java -Djava.security.egd=file:/dev/urandom -jar elasticsearch-mesos-scheduler-1.0.0-withDependencies.jar --frameworkUseDocker false --zookeeperMesosUrl zk://172.18.0.3:2181/mesos --frameworkName elasticsearch --elasticsearchClusterName mesos-elasticsearch --elasticsearchCpu 0.5 --elasticsearchRam 1024 --elasticsearchDisk 1024 --elasticsearchNodes 1",
   "cpus": 0.2,
   "mem": 512,
   "env": {
-    "JAVA_OPTS": "-Xms256m -Xmx512m"
+    "JAVA_OPTS": "-Djava.security.egd=file:/dev/urandom -Xms256m -Xmx512m"
   },
   "ports": [31100],
   "requirePorts": true,
