@@ -1,6 +1,5 @@
 minimesos {
     clusterName = "Change Cluster Name in minimesosFile file"
-    exposePorts = true
     loggingLevel = "INFO"
     mesosVersion = "0.25"
     timeout = 60
