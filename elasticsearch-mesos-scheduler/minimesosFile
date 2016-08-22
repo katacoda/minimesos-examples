@@ -16,7 +16,7 @@ minimesos {
 
             cpu {
                 role = "*"
-                value = 1
+                value = 2
             }
 
             disk {
