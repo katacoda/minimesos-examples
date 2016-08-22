@@ -1,7 +1,7 @@
 {
   "id": "elasticsearch-mesos-scheduler",
   "uris": [
-    "file:///root/elasticsearch-mesos-scheduler-1.0.0-withDependencies.jar"
+    "file:///home/core/elasticsearch-mesos-scheduler-1.0.0-withDependencies.jar"
   ],
   "cmd": "java -Djava.security.egd=file:/dev/urandom -jar elasticsearch-mesos-scheduler-1.0.0-withDependencies.jar --frameworkUseDocker false --zookeeperMesosUrl zk://172.18.0.3:2181/mesos --frameworkName elasticsearch --elasticsearchClusterName mesos-elasticsearch --elasticsearchCpu 0.5 --elasticsearchRam 1024 --elasticsearchDisk 1024 --elasticsearchNodes 1",
   "cpus": 0.2,
